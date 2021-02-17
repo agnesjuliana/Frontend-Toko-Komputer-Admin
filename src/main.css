@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .myheader{
+    height: 720px;
+  }
+
+.main-box {
+  z-index: 1;
+  height: 80%;
+  width: 85%;
+  position: absolute;
+  top: 15%;
+  left: 7%;
+}
+
+.main-box-general {
+  height: 80%;
+  width: 85%;
+  background-color: #df559a;
+}
+
+.hello, .admin, .home-pic, .welcome, .title-card, .header-pic {
+  position: absolute;
+  z-index: 2;
+}
+
+.hello{
+  width: 9%;
+  left: 4%;
+}
+
+.admin{
+  width: 9%;
+  right: 3%;
+  bottom: 0;
+}
+
+.home-pic {
+  width: 40%;
+  left: 30%;
+  top: 0;
+}
+
+.welcome{
+  margin-left: auto;
+  margin-right: auto;
+  left: 40%;
+  bottom: 10%;
+}
+
+
+
+.dot {
+  margin-right: 2px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.pink {
+  background-color: #df559a;
+}
+
+.tosca {
+  background-color: #0dabd2;
+}
+
+.yellow {
+  background-color: #ecc82a;
+}
+
+.card-header {
+  background-color: #f3f3f3;
+}
+
+.title-card {
+  width: 40%;
+  height: 35%;
+  top: 35%;
+  left: 10%;
+}
+
+.header-pic {
+  width: 50%;
+  bottom: 3%;
+  right: 3%;
+}

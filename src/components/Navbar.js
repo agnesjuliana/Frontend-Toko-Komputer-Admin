@@ -1,20 +1,14 @@
-import './App.css';
-import React from 'react'
-import Utama from './pages/MainPage'
-import { Link } from 'react-router-dom'
-
-class App extends React.Component {
-  Logout = () => {
-    localStorage.removeItem("token")
-    localStorage.removeItem("admin")
-    window.location = "/login"
-  }
-
-  render() {
-    return (
-      <div>
-        {/* START NAVBAR */}
-        <div className="navbar sticky-top navbar-expand-lg navbar-light">
+import React from "react"
+import { Link } from "react-router-dom"
+class Navbar extends React.Component {
+    Logout = () => {
+        localStorage.removeItem("token")
+        localStorage.removeItem("admin")
+        window.location = "/login"
+    }
+    render() {
+        return (
+            <div className="navbar sticky-top navbar-expand-lg navbar-light">
                 <a className="navbar-brand">
                         Computer Store
                 </a>
@@ -60,14 +54,8 @@ class App extends React.Component {
                     </span>
                 </div>
             </div>
-        {/* END NAVBAR */}
-
-        {/* START BODY */}
-        <Utama/>
-        {/* END BODY */}
-      </div>
-    );
-  }
+        )
+    }
 }
+export default Navbar;
 
-export default App;
